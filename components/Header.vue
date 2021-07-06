@@ -8,6 +8,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="#ourwork">Our Work</b-nav-item>
+          <b-nav-item href="#contact">Contact Us</b-nav-item>
           <b-nav-item href="https://www.facebook.com/LKWebDevelopment" target="_blank"><b-icon-facebook></b-icon-facebook></b-nav-item>
           <b-nav-item href="https://www.instagram.com/lkwebsitedevelopment/" target="_blank"><b-icon-instagram></b-icon-instagram></b-nav-item>
         </b-navbar-nav>

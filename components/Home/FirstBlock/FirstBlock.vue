@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <img class="img-fluid d-block d-sm-none" src="~/assets/images/lkbanner.jpg" />
-    <img class="img-fluid d-none d-sm-block" src="~/assets/images/lkbanner_desktop.jpg" />
+    <img class="img-fluid d-none d-sm-inline-block" src="~/assets/images/lkbanner_desktop.jpg" />
   </div>
 </template>
 

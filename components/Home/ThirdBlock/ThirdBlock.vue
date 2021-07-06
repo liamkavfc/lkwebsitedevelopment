@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <a id="#ourwork"></a>
+    <a ref="ourwork"></a>
     <h1 class="text-center">Our Work</h1>
     <div class="row mt-5">
       <div class="col-md-6">
