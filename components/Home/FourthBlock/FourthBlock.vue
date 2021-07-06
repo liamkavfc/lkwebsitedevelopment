@@ -1,48 +1,37 @@
 <template>
-  <div class="col-md-8 offset-md-2 services">
-    <h1 class="text-center mb-5">
-      Services
+  <div class="col-md-8 offset-md-2 text-center">
+    <h1 class="mb-5">
+      Contact Us
     </h1>
-    <b-row>
-      <b-col md="4" sm="12" class="mb-3">
-        <div class="text-center">
-          <h3>LK Web Development</h3>
-          <br>
-          <img src="~/assets/images/logo_black.png" style="width: 96px;" />
-          <br><br>
-          <p>I can help you build, ammend or even something simple like answer any questions you may have. Please get in touch to see how I can help you reach your online potential!</p>
-        </div>
-      </b-col>
-      <b-col md="4" sm="12" class="mb-3">
-        <div class="text-center">
-          <h3>Collabs</h3>
-          <br><br>
-          <b-icon-people-fill scale="6" />
-          <br><br><br><br>
-          <p>Im always open for the possiblility of working with other developers on fun project or even designers on website projects. Please do get in touch to see how we can team up!</p>
-        </div>
-      </b-col>
-      <b-col md="4" sm="12" class="mb-3">
-        <div class="text-center">
-          <h3>Get in touch</h3>
-          <br><br>
-          <b-icon-linkedin scale="6" />
-          <br><br><br><br>
-          <p>The best way to contact me about the points I have mentioned is LinkedIn. Come connect with me and lets chat!</p>
-        </div>
-      </b-col>
-    </b-row>
+    <b-container>
+      <b-row>
+        <b-col sm="6" class="mb-4">
+          <a href="https://www.facebook.com/LKWebDevelopment">
+            <b-icon-facebook scale="6"></b-icon-facebook>
+            <h3 class="mt-5">Facebook</h3>
+            <p>LKWebDevelopment</p>
+          </a>
+        </b-col>
+        <b-col sm="6" class="mb-4">
+          <a href="https://www.instagram.com/lkwebsitedevelopment/">
+            <b-icon-instagram scale="6"></b-icon-instagram>
+            <h3 class="mt-5">Instagram</h3>
+            <p>@lkwebsitedevelopment</p>
+          </a>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import { BIconPeopleFill, BIconLinkedin } from 'bootstrap-vue'
+import { BIconFacebook, BIconInstagram } from 'bootstrap-vue'
 
 export default {
   name: 'FourthBlock',
   components: {
-    BIconPeopleFill,
-    BIconLinkedin
+    BIconFacebook,
+    BIconInstagram
   }
 }
 </script>
@@ -50,6 +39,10 @@ export default {
 <style>
   #fourthBlock {
     background: #eee;
-    padding: 7.5rem 0;
+    padding: 2rem 0;
+  }
+
+  #fourthBlock a {
+    color: #000;
   }
 </style>

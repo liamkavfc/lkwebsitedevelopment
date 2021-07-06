@@ -9,9 +9,9 @@
     <div id="thirdBlock" class="block">
       <ThirdBlock />
     </div>
-    <!-- <div id="fourthBlock" class="block full-height">
+    <div id="fourthBlock" class="block">
       <FourthBlock />
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -19,14 +19,14 @@
 import FirstBlock from '@/components/Home/FirstBlock/FirstBlock.vue'
 import SecondBlock from '@/components/Home/SecondBlock/SecondBlock.vue'
 import ThirdBlock from '@/components/Home/ThirdBlock/ThirdBlock.vue'
-// import FourthBlock from '@/components/Home/FourthBlock/FourthBlock.vue'
+import FourthBlock from '@/components/Home/FourthBlock/FourthBlock.vue'
 
 export default {
   components: {
     FirstBlock,
     SecondBlock,
-    ThirdBlock
-    // FourthBlock
+    ThirdBlock,
+    FourthBlock
   }
 }
 </script>
