@@ -1,16 +1,26 @@
 <template>
   <div id="header" class="text-center">
     <b-navbar toggleable="lg" type="dark">
-      <b-navbar-brand href="#"><img src="~/assets/images/lkwd_logo_white.png"></b-navbar-brand>
+      <b-navbar-brand href="#">
+        <img src="~/assets/images/lkwd_logo_white.png">
+      </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse" />
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#ourwork">Our Work</b-nav-item>
-          <b-nav-item href="#contact">Contact Us</b-nav-item>
-          <b-nav-item href="https://www.facebook.com/LKWebDevelopment" target="_blank"><b-icon-facebook></b-icon-facebook></b-nav-item>
-          <b-nav-item href="https://www.instagram.com/lkwebsitedevelopment/" target="_blank"><b-icon-instagram></b-icon-instagram></b-nav-item>
+          <b-nav-item @click="openLink('ourwork')">
+            Our Work
+          </b-nav-item>
+          <b-nav-item @click="openLink('contact')">
+            Contact Us
+          </b-nav-item>
+          <b-nav-item href="https://www.facebook.com/LKWebDevelopment" target="_blank">
+            <b-icon-facebook />
+          </b-nav-item>
+          <b-nav-item href="https://www.instagram.com/lkwebsitedevelopment/" target="_blank">
+            <b-icon-instagram />
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -24,6 +34,12 @@ export default {
   components: {
     BIconFacebook,
     BIconInstagram
+  },
+  methods: {
+    openLink (page) {
+      const element = document.getElementById(page)
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }
 </script>

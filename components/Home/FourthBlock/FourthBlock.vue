@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-8 offset-md-2 text-center">
+  <div id="contact" class="col-md-8 offset-md-2 text-center">
     <h1 class="mb-5">
       Contact Us
     </h1>
