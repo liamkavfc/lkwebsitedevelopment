@@ -7,22 +7,22 @@
 
 <script>
 export default {
-  name: 'FirstBlock'
+  name: 'BannerBlock'
 }
 </script>
 
 <style>
 
-  #firstBlock {
+  #BannerBlock {
     background-color: rgba(0, 0, 0, 0.75);
   }
 
-  #firstBlock .details {
+  #BannerBlock .details {
     padding-top: 20vh;
     z-index: 99;
   }
 
-  #firstBlock .details .profile_image {
+  #BannerBlock .details .profile_image {
     height: 300px;
     width: 300px;
     border-radius: 45rem;
@@ -37,11 +37,11 @@ export default {
     border: 8px solid rgba(0, 0, 0, 0.75);
   }
 
-  #firstBlock .details .profile_name {
+  #BannerBlock .details .profile_name {
       padding: 2rem 0;
   }
 
-  #firstBlock .details .profile_name * {
+  #BannerBlock .details .profile_name * {
     color: #fff;
   }
 </style>

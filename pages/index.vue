@@ -1,32 +1,37 @@
 <template>
   <div class="blocks">
-    <div id="firstBlock" class="block">
-      <FirstBlock />
+    <div id="BannerBlock" class="block">
+      <BannerBlock />
     </div>
-    <div id="secondBlock" class="block">
-      <SecondBlock />
+    <div id="AboutBlock" class="block">
+      <AboutBlock />
     </div>
-    <div id="thirdBlock" class="block">
-      <ThirdBlock />
+    <div id="WorkBlock" class="block">
+      <WorkBlock />
     </div>
-    <div id="fourthBlock" class="block">
-      <FourthBlock />
+    <div id="PlansBlock" class="block">
+      <PlansBlock />
+    </div>
+    <div id="ContactBlock" class="block">
+      <ContactBlock />
     </div>
   </div>
 </template>
 
 <script>
-import FirstBlock from '@/components/Home/FirstBlock/FirstBlock.vue'
-import SecondBlock from '@/components/Home/SecondBlock/SecondBlock.vue'
-import ThirdBlock from '@/components/Home/ThirdBlock/ThirdBlock.vue'
-import FourthBlock from '@/components/Home/FourthBlock/FourthBlock.vue'
+import BannerBlock from '@/components/Home/BannerBlock/BannerBlock.vue'
+import AboutBlock from '@/components/Home/AboutBlock/AboutBlock.vue'
+import WorkBlock from '@/components/Home/WorkBlock/WorkBlock.vue'
+import ContactBlock from '@/components/Home/ContactBlock/ContactBlock.vue'
+import PlansBlock from '@/components/Home/PlansBlock/PlansBlock.vue'
 
 export default {
   components: {
-    FirstBlock,
-    SecondBlock,
-    ThirdBlock,
-    FourthBlock
+    BannerBlock,
+    AboutBlock,
+    WorkBlock,
+    ContactBlock,
+    PlansBlock
   }
 }
 </script>
@@ -65,5 +70,13 @@ export default {
     left: 0;
     background: rgba(0,0,0,0.66);
     z-index: -1;
+  }
+
+  .blocks > .block:nth-child(odd) {
+    background: #fff;
+  }
+
+  .blocks > .block:nth-child(even) {
+    background: #eee;
   }
 </style>

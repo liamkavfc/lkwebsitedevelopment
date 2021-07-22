@@ -23,17 +23,17 @@
 
 <script>
 export default {
-  name: 'ThirdBlock'
+  name: 'WorkBlock'
 }
 </script>
 
 <style>
-  #thirdBlock {
+  #WorkBlock {
     padding: 7.5rem 0;
   }
 
   @media (max-width: 600px) {
-    #thirdBlock {
+    #WorkBlock {
       padding: 2rem 0;
     }
   }

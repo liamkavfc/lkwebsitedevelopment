@@ -28,7 +28,7 @@
 import { BIconFacebook, BIconInstagram } from 'bootstrap-vue'
 
 export default {
-  name: 'FourthBlock',
+  name: 'ContactBlock',
   components: {
     BIconFacebook,
     BIconInstagram
@@ -37,12 +37,11 @@ export default {
 </script>
 
 <style>
-  #fourthBlock {
-    background: #eee;
+  #ContactBlock {
     padding: 2rem 0;
   }
 
-  #fourthBlock a {
+  #ContactBlock a {
     color: #000;
   }
 </style>

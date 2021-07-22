@@ -1,4 +1,3 @@
-/* eslint-disable vue/no-unused-components */
 <template>
   <div>
     <div class="container col-12 text-center">
@@ -30,7 +29,7 @@
 import { BIconCalendar3, BIconPeople, BIconChat } from 'bootstrap-vue'
 
 export default {
-  name: 'SecondBlock',
+  name: 'AboutBlock',
   components: {
     BIconCalendar3,
     BIconPeople,
@@ -40,26 +39,25 @@ export default {
 </script>
 
 <style>
-  #secondBlock {
-    background: #eee;
+  #AboutBlock {
     padding: 7.5rem 0;
   }
 
   @media (max-width: 600px) {
-    #secondBlock {
+    #AboutBlock {
       padding: 2rem 0;
     }
 
-    #secondBlock svg {
+    #AboutBlock svg {
       height: 0.5rem;
       width: 0.5rem;
     }
 
-    #secondBlock h3 {
+    #AboutBlock h3 {
       font-size: 0.9rem;
     }
 
-    #secondBlock p {
+    #AboutBlock p {
       font-size: 0.7rem;
     }
   }
